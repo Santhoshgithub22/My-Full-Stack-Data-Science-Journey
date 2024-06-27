@@ -1,24 +1,28 @@
 List vs Tuple vs Set vs Dictionary
 
-List
+# List
+
 Mutable: Yes
 Allows Duplicates: Yes
 Ordered: Yes (maintains insertion order since Python 3.7)
 Indexable: Yes
 Example: [1, 2, 3, 2]
-Tuple
+
+# Tuple
 Mutable: No (immutable)
 Allows Duplicates: Yes
 Ordered: Yes
 Indexable: Yes
 Example: (1, 2, 3, 2)
-Set
+
+# Set
 Mutable: Yes (but elements must be immutable)
 Allows Duplicates: No (unique elements only)
 Ordered: No (unordered collection)
 Indexable: No (but you can iterate over it)
 Example: {1, 2, 3}
-Dictionary
+
+# Dictionary
 Mutable: Yes
 Allows Duplicates: Keys: No, Values: Yes
 Ordered: Yes (maintains insertion order since Python 3.7)
@@ -26,24 +30,29 @@ Indexable: Keys are used for indexing
 Example: {'a': 1, 'b': 2, 'c': 3}
 Here's a brief example demonstrating the differences:
 
-python
-Copy code
+# Python
+# Copy code
+
 # List
+
 my_list = [1, 2, 3, 2]
 my_list[1] = 20  # Lists are mutable
 print(my_list)  # Output: [1, 20, 3, 2]
 
 # Tuple
+
 my_tuple = (1, 2, 3, 2)
 # my_tuple[1] = 20  # Tuples are immutable, this will raise an error
 
 # Set
+
 my_set = {1, 2, 3}
 my_set.add(4)  # Adding an element
 print(my_set)  # Output: {1, 2, 3, 4}
 # my_set.add(3)  # Adding a duplicate element has no effect
 
 # Dictionary
+
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 my_dict['b'] = 20  # Modifying a value
 print(my_dict)  # Output: {'a': 1, 'b': 20, 'c': 3}
